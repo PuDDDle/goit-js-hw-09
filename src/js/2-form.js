@@ -26,6 +26,7 @@ form.addEventListener('submit', event => {
   event.preventDefault();
   if (form.email.value.trim() === '' || form.message.value.trim() === '') {
     alert('Please fill in all fields of the form before submitting');
+    return;
   }
   const formData = {
     email: form.email.value.trim(),
